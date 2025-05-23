@@ -3,7 +3,7 @@ import { createStackNavigator, TransitionPresets } from '@react-navigation/stack
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from '../screens/LoginScreen';
-import RegisterScreen from '../screens/RegisterScreen';
+import AccountTypeScreen from '../screens/AccountTypeScreen';
 import DashboardScreen from '../screens/DashboardScreen';
 import EventScreen from '../screens/EventScreen';
 import DonationScreen from '../screens/DonationScreen';
@@ -68,7 +68,7 @@ const AppNavigator = () => (
     <Stack.Screen name="Splash" component={SplashScreen} />
     <Stack.Screen name="Dashboard" component={DrawerMenu} />
     <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: true}}/>
-    <Stack.Screen name="Register" component={RegisterScreen} />
+    <Stack.Screen name="Register" component={AccountTypeScreen} options={{ headerShown: true}}/>
   </Stack.Navigator>
 );
 
